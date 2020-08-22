@@ -8,3 +8,9 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 )
+// store.subscribe(() => {
+//   ReactDOM.render(
+//       <App store={store}/>,
+//       document.getElementById('root')
+//   )
+// })

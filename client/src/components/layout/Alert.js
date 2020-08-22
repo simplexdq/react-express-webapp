@@ -17,7 +17,7 @@ Alert.propTypes = {
   alerts: PropTypes.array.isRequired,
 }
 
-//1.mapping state to props getting the alert state putting it inside a prop of alerts
+//1.mapping the redux state to props in this component so we can have access in it, getting the alert state, putting it inside a prop of alerts
 const mapStateToProps = (state) => ({
   alerts: state.alert,
 })
@@ -25,3 +25,4 @@ const mapStateToProps = (state) => ({
 //So remember connect this in that map state to props.
 //Now if we had any actions to call that would go second.
 export default connect(mapStateToProps)(Alert)
+//the alert array we see in the redux dev tools, we want to fetch that into this component

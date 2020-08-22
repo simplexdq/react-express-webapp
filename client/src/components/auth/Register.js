@@ -24,7 +24,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   const onSubmit = async (e) => {
     e.preventDefault()
     if (password !== password2) {
-      setAlert('Password do not match', 'danger') // call setAlert
+      setAlert('Password do not match', 'danger') // call setAlert(in action）,pass this in as a message to our actions. it will generate an id and dispatch set alert with that message alert type and id
     } else {
       register({ name, email, password })
     }
@@ -103,3 +103,4 @@ const mapStateToProps = (state) => ({
 //export connect, add that setAlert action in order to use it
 //null means we didn't have any map state to props we just had an action setAlert.
 export default connect(mapStateToProps, { setAlert, register })(Register)
+//{setAlert}is to allow us to access props.setAlert
