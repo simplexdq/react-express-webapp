@@ -46,7 +46,7 @@ const EditProfile = ({
       youtube: loading || !profile.social ? '' : profile.social.youtube,
       instagram: loading || !profile.social ? '' : profile.social.instagram,
     })
-  }, [loading]) //change only when loading changes useEffect性能优化
+  }, [loading, getCurrentProfile]) //change only when loading changes useEffect性能优化
 
   const {
     company,
