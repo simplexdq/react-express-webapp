@@ -3,7 +3,6 @@ import { Link, withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { createProfile, getCurrentProfile } from '../../actions/profile'
-import { createStore } from 'redux'
 
 const EditProfile = ({
   profile: { profile, loading },
